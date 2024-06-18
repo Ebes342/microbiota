@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>División vertical en tres secciones en HTML y CSS</title>
+    <style>
+        /* Estilos básicos para las secciones */
+        body {
+            margin: 0; /* Elimina el margen por defecto del body */
+        }
+
+        .seccion {
+            height: 1500px; /* Altura fija para cada sección */
+            background-color: #f0f0f0; /* Color de fondo de las secciones */
+            border: 1px solid #ccc; /* Borde para visualizar las secciones */
+            box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+        }
+
+        /* Distribución de las secciones */
+        .seccion-1 {
+            float: left; /* Usa float para alinear las secciones horizontalmente */
+            margin-top: -200px;
+            width: calc(33.33% - 10px); /* Ancho del 33.33% para cada sección */
+            margin-right: 10px; /* Margen derecho entre las secciones */
+            margin-bottom: 10px; /* Margen inferior entre las secciones */
+        }
+
+        .seccion-2 {
+            float: right; /* Usa float para alinear las secciones horizontalmente */
+            
+            width: calc(33.33% - 10px); /* Ancho del 33.33% para cada sección */
+            margin-right: 10px; /* Margen derecho entre las secciones */
+            margin-bottom: 10px; /* Margen inferior entre las secciones */
+        }
+        /* Limpiar el float para evitar problemas de diseño */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body class="clearfix">
+    <h1>La microbiota importa</h1>
+
+
+    <div class="seccion seccion-1"></div>
+    <div class="seccion seccion-2"></div>
+   <h1>dddd</h1>
+   <head>
+</body>
+</html>
